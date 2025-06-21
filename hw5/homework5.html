@@ -8,41 +8,102 @@
   <body>
     <a-scene background="color: black">
       
-      <a-sphere radius="4" src="./planets/sun.jpg" position="0 0 0" animation="..."></a-sphere>
+      <!-- Сонце (центр системи) -->
+      <a-sphere
+        radius="4"
+        src="./planets/sun.jpg"
+        position="0 0 0"
+        animation="property: rotation; to: 0 360 0; loop: true; dur: 20000; easing: linear;">
+      </a-sphere>
 
-      <a-entity position="0 0 0" animation="...">
-        <a-sphere position="14 0 0" radius="0.3" src="./planets/mercury.jpg" animation="..."></a-sphere>
+      <!-- ОРБІТА МЕРКУРІЯ -->
+      <a-entity position="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 8800; easing: linear;">
+        <a-sphere 
+          position="14 0 0"
+          radius="0.3"
+          src="./planets/mercury.jpg"
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 6000; easing: linear;">
+        </a-sphere>
       </a-entity>
 
-      <a-entity position="0 0 0" animation="...">
-        <a-sphere position="20 0 0" radius="0.4" src="./planets/venus.jpg" animation="..."></a-sphere>
+      <!-- ОРБІТА ВЕНЕРИ -->
+      <a-entity position="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 22500; easing: linear;">
+        <a-sphere 
+          position="20 0 0"
+          radius="0.4"
+          src="./planets/venus.jpg"
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 10000; easing: linear;">
+        </a-sphere>
       </a-entity>
 
-      <a-entity position="0 0 0" animation="...">
-        <a-sphere position="26 0 0" radius="0.45" src="./planets/earth.jpg" animation="..."></a-sphere>
+      <!-- ОРБІТА ЗЕМЛІ -->
+      <a-entity position="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 36500; easing: linear;">
+        <a-sphere 
+          position="26 0 0"
+          radius="0.45"
+          src="./planets/earth.jpg"
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 4000; easing: linear;">
+        </a-sphere>
       </a-entity>
       
-      <a-entity position="0 0 0" animation="...">
-        <a-sphere position="34 0 0" radius="0.38" src="./planets/mars.jpg" animation="..."></a-sphere>
+      <!-- ОРБІТА МАРСА -->
+      <a-entity position="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 68700; easing: linear;">
+        <a-sphere 
+          position="34 0 0"
+          radius="0.38"
+          src="./planets/mars.jpg"
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 5000; easing: linear;">
+        </a-sphere>
       </a-entity>
 
-      <a-entity position="0 0 0" animation="...">
-        <a-sphere position="53 0 0" radius="0.9" src="./planets/jupiter.jpg" animation="..."></a-sphere>
+      <!-- ОРБІТА ЮПІТЕРА -->
+      <a-entity position="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 120000; easing: linear;">
+        <a-sphere 
+          position="53 0 0"
+          radius="0.9"
+          src="./planets/jupiter.jpg"
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 2000; easing: linear;">
+        </a-sphere>
       </a-entity>
 
-      <a-entity position="0 0 0" animation="...">
-        <a-sphere position="74 0 0" radius="0.8" src="./planets/saturn.jpg" animation="..."></a-sphere>
+      <!-- ОРБІТА САТУРНА -->
+      <a-entity position="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 290000; easing: linear;">
+        <a-sphere 
+          position="74 0 0"
+          radius="0.8"
+          src="./planets/saturn.jpg"
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 2500; easing: linear;">
+        </a-sphere>
       </a-entity>
 
-      <a-entity position="0 0 0" animation="...">
-        <a-sphere position="104 0 0" radius="0.7" src="./planets/uranus.jpg" animation="..."></a-sphere>
+      <!-- ОРБІТА УРАНА -->
+      <a-entity position="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 840000; easing: linear;">
+        <a-sphere 
+          position="104 0 0"
+          radius="0.7"
+          src="./planets/uranus.jpg"
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 3000; easing: linear;">
+        </a-sphere>
       </a-entity>
 
-      <a-entity position="0 0 0" animation="...">
-        <a-sphere position="159 0 0" radius="0.68" src="./planets/neptune.jpg" animation="..."></a-sphere>
+      <!-- ОРБІТА НЕПТУНА -->
+      <a-entity position="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 1650000; easing: linear;">
+        <a-sphere 
+          position="159 0 0"
+          radius="0.68"
+          src="./planets/neptune.jpg"
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 3500; easing: linear;">
+        </a-sphere>
       </a-entity>
 
-      <a-entity id="cameraRig" position="0 5 30" wasd-controls look-controls><a-camera></a-camera></a-entity>
+      <!-- Керована камера -->
+      <a-entity 
+        id="cameraRig" 
+        position="0 5 30" 
+        wasd-controls 
+        look-controls>
+        <a-camera></a-camera>
+      </a-entity>
     </a-scene>
   </body>
 </html>
